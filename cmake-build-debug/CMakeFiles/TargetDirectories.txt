@@ -1,0 +1,3 @@
+C:/Users/capor/CLionProjects/school/cmake-build-debug/CMakeFiles/school.dir
+C:/Users/capor/CLionProjects/school/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/capor/CLionProjects/school/cmake-build-debug/CMakeFiles/rebuild_cache.dir
