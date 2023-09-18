@@ -1,16 +1,58 @@
 #include <iostream>
-// ì„ í–‰ì²˜ë¦¬ëž€?
-// C++ í”„ë¡œê·¸ëž¨ì„ ì»´íŒŒì¼í•˜ê¸° ì „ì— ì†ŒìŠ¤ í”„ë¡œê·¸ëž¨ì„ ê°€ê³µí•˜ì—¬ ì»´íŒŒì¼ëŸ¬ê°€ ì‹¤ì œë¡œ ë²ˆì—­í•  ì†ŒìŠ¤ í”„ë¡œê·¸ëž¨ì„ ë§Œë“œëŠ” ê²ƒ
-// ì„ í–‰ì²˜ë¦¬ê¸° ì§€ì‹œì–´ : #
-// ì„ í–‰ì²˜ë¦¬ê¸° ì§€ì‹œì–´ ë¬¸ìž¥ì€ í•œ í–‰ì— í•œ ê°œì˜ ë¬¸ìž¥ì„ ìž‘ì„±í•¨
+// ¼±ÇàÃ³¸®¶õ?
+// C++ ÇÁ·Î±×·¥À» ÄÄÆÄÀÏÇÏ±â Àü¿¡ ¼Ò½º ÇÁ·Î±×·¥À» °¡°øÇÏ¿© ÄÄÆÄÀÏ·¯°¡ ½ÇÁ¦·Î ¹ø¿ªÇÒ ¼Ò½º ÇÁ·Î±×·¥À» ¸¸µå´Â °Í
+// ¼±ÇàÃ³¸®±â Áö½Ã¾î : #
+// ¼±ÇàÃ³¸®±â Áö½Ã¾î ¹®ÀåÀº ÇÑ Çà¿¡ ÇÑ °³ÀÇ ¹®ÀåÀ» ÀÛ¼ºÇÔ
 
-// ëŒ€í‘œì ì¸ ì„±í–‰ì²˜ë¦¬
-// 1. í—¤ë”íŒŒì¼ ì‚½ìž… : #include
-// 2. ë§¤í¬ë¡œ ì„ ì–¸ ë° í•´ì œ : #define, #undef
-// 3. ì¡°ê±´ë¶€ ì»´íŒŒì¼ : #if, #ifdef, #ifndef
+// ´ëÇ¥ÀûÀÎ ¼ºÇàÃ³¸®
+// 1. Çì´õÆÄÀÏ »ðÀÔ : #include
+// 2. ¸ÅÅ©·Î ¼±¾ð ¹× ÇØÁ¦ : #define, #undef
+// 3. Á¶°ÇºÎ ÄÄÆÄÀÏ : #if, #ifdef, #ifndef
 
 
-int main() {
-    std::cout << "ë‚˜ì˜ ì²« ë²ˆì§¸ C++ í”„ë¡œê·¸ëž¨" << std::endl;
+using namespace std;
+
+int main() // ¸Ó¸®ºÎ
+{
+    // ¸öÃ¼ "ºí·Ï"
+    std::cout << "³ªÀÇ Ã¹ ¹øÂ° C++ ÇÁ·Î±×·¥" << std::endl;
+
+    // std::cout °´Ã¼
+    // Ç¥ÁØ Ãâ·Â ½ºÆ®¸² °´Ã¼, µ¥ÀÌÅÍ¸¦ ¹®ÀÚ¿­·Î º¯È¯ÇÏ¿© Ãâ·Â, Ãâ·Â ¿¬»êÀÚ(»ðÀÔ ¿¬»êÀÚ) : <<
+    int a = 10;
+    std::cout << "aÀÇ °ªÀº";
+    std::cout << a << "ÀÔ´Ï´Ù." << std::endl;
+
+    // std::cin °´Ã¼
+    // Ç¥ÁØ ÀÔ·Â ½ºÆ®¸² °´Ã¼, ¹®ÀÚ¿­À» ÀÔ·Â º¯¼öÀÇ ÀÚ·áÇüÀÇ °ªÀ¸·Î º¯È¯ÇÏ¿© ÀÔ·ÂÇÔ
+    // ÀÔ·Â ¿¬»êÀÚ(ÃßÃâ ¿¬»êÀÚ) : >>
+    // ¹é»ö °ø¹é ¹®ÀÚ(ºóÄ­, ÅÇ, »õÁÙ ¹®ÀÚ) ´Â ±¸ºÐ ¹®ÀÚ·Î Ãë±Þ
+    int a2;
+    char str[100];
+    std::cin >> a2 >> str;
+
+
+    // using Å°¿öµå »ç¿ë
+    cout << "³ªÀÇ Ã¹ ¹ø¤Š C++ ÇÁ·Î±×·¥" << endl;
+
     return 0;
 }
+
+namespace myNSpc {
+    // ¸íÄª °ø°£ : ´Ù¸¥ ¿µ¿ªÀÇ ¸íÄª ¼±¾ð°ú ¹«°üÇÏ°Ô ¸íÄª°ø°£ ³»¿¡¼­ ÀÚÀ¯·Ó°Ô ¸íÄªÀ» ¼±¾ðÇÏ¿© »ç¿ëÇÒ ¼ö ÀÖÀ½
+    // µ¿ÀÏÇÑ ¸íÄªÀÌ¶óµµ ¼­·Î ´Ù¸¥ ¸íÄª°ø°£¿¡¼­ Á¤ÀÇ µÇ¾ú´Ù¸é º°°³ÀÇ °ÍÀ¸·Î ±¸ºÐÇÔ : ¿©·¯ ÇÁ·Î±×·¡¸Ó°¡ ÀÛ¼ºÇÑ ÇÁ·Î±×·¥À» °áÇÕÇÏ¿© ¿Ï¼ºÇÒ °æ¿ì °¢ÀÚ ÇÊ¿äÇÑ ¸íÄªÀ» µ¶¸³ÀûÀ¸·Î »ç¿ë °¡´É
+    // Àü¿ª ¸íÄª °ø°£ : Æ¯Á¤ ¸íÄª°ø°£¿¡ ¼ÓÇÏÁö ¾Ê´Â ±âº» ¸íÄª°ø°£
+    // std ¸íÄª°ø°£ : Ç¥ÁØ C++ ¶óÀÌºê·¯¸®ÀÇ ¸íÄªµéÀÌ Á¤ÀÇµÇ¾î ÀÖ´Â ¸íÄª °ø°£
+
+    int count; // ¸íÄªÀ» ¼±¾ðÇÏ´Â ¹®Àå ³ª¿­
+
+    //¸íÄª°ø°£ ¿ÜºÎ¿¡¼­´Â ¼Ò¼Ó ¸íÄª°ø°£À» ÁöÁ¤ÇÏ¿© »ç¿ëÇØ¾ß ÇÔ
+    // myNSpc::count = 0;
+
+    // 'using'À» ÀÌ¿ëÇÑ ¸íÄª°ø°£ »ç¿ë : Æ¯Á¤ ¸íÄª°ø°£ÀÌ³ª ¸íÄª°ø°£ ³»ÀÇ Æ¯Á¤ ÀÌ¸§À» ÀÚÁÖ »ç¿ëÇÏ´Â °æ¿ì ¸íÄª°ø°£ ÁöÁ¤À» °£¼ÒÈ­ ÇÒ ¼ö ÀÖÀ½.
+}
+
+
+
+
+
