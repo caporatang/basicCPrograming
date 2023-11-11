@@ -1,3 +1,15 @@
 # ninja log v5
-5	396	7166511100004424	CMakeFiles/school.dir/main.cpp.obj	dc830730df17e26b
-396	629	7166511102285044	school.exe	71d91f71e5b91eaa
+6	75	7213723228425101	CMakeFiles/school.dir/main.cpp.obj	dc830730df17e26b
+384	576	7213776344401791	school.exe	8f51175b73ccb66d
+4	384	7213776342464999	CMakeFiles/school.dir/exam/WeightedMovingAverageManager.cpp.obj	a597ade510fdcdf4
+4	68	7213721081287678	CMakeFiles/school.dir/basic.cpp.obj	ec182fe827d9596b
+1	108	7213772861528265	CMakeFiles/school.dir/exam/WeightedMovingAverage.cpp.obj	a52cac744062f456
+4	366	7213761834349173	CMakeFiles/school.dir/exam/weightedMovingAverage.cpp.obj	1d5ba6491e488595
+2	165	7213807271752440	build.ninja	fbedeaf98b35fe16
+5	238	7213772862829095	CMakeFiles/school.dir/exam/WeightedMovingAverage_.cpp.obj	54f668fbf3342b00
+4	241	7213807664288092	CMakeFiles/school.dir/exam/WeightedMovingAverage_.cpp.obj	54f668fbf3342b00
+13	394	7213807665820425	CMakeFiles/school.dir/exam/WeightedMovingAverageManager.cpp.obj	a597ade510fdcdf4
+394	638	7213807668012416	school.exe	8f51175b73ccb66d
+4	298	7213853996008636	CMakeFiles/school.dir/exam/WeightedMovingAverage_.cpp.obj	54f668fbf3342b00
+9	468	7213853997715253	CMakeFiles/school.dir/exam/WeightedMovingAverageManager.cpp.obj	a597ade510fdcdf4
+468	714	7213854000116892	school.exe	8f51175b73ccb66d

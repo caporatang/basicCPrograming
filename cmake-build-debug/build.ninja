@@ -61,11 +61,17 @@ build CMakeFiles/school.dir/basic.cpp.obj: CXX_COMPILER__school_unscanned_Debug 
   OBJECT_DIR = CMakeFiles\school.dir
   OBJECT_FILE_DIR = CMakeFiles\school.dir
 
-build CMakeFiles/school.dir/CircleArea.cpp.obj: CXX_COMPILER__school_unscanned_Debug C$:/Users/capor/CLionProjects/school/CircleArea.cpp || cmake_object_order_depends_target_school
-  DEP_FILE = CMakeFiles\school.dir\CircleArea.cpp.obj.d
+build CMakeFiles/school.dir/exam/WeightedMovingAverage_.cpp.obj: CXX_COMPILER__school_unscanned_Debug C$:/Users/capor/CLionProjects/school/exam/WeightedMovingAverage$ .cpp || cmake_object_order_depends_target_school
+  DEP_FILE = CMakeFiles\school.dir\exam\WeightedMovingAverage_.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\school.dir
-  OBJECT_FILE_DIR = CMakeFiles\school.dir
+  OBJECT_FILE_DIR = CMakeFiles\school.dir\exam
+
+build CMakeFiles/school.dir/exam/WeightedMovingAverageManager.cpp.obj: CXX_COMPILER__school_unscanned_Debug C$:/Users/capor/CLionProjects/school/exam/WeightedMovingAverageManager.cpp || cmake_object_order_depends_target_school
+  DEP_FILE = CMakeFiles\school.dir\exam\WeightedMovingAverageManager.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\school.dir
+  OBJECT_FILE_DIR = CMakeFiles\school.dir\exam
 
 
 # =============================================================================
@@ -75,7 +81,7 @@ build CMakeFiles/school.dir/CircleArea.cpp.obj: CXX_COMPILER__school_unscanned_D
 #############################################
 # Link the executable school.exe
 
-build school.exe: CXX_EXECUTABLE_LINKER__school_Debug CMakeFiles/school.dir/main.cpp.obj CMakeFiles/school.dir/basic.cpp.obj CMakeFiles/school.dir/CircleArea.cpp.obj
+build school.exe: CXX_EXECUTABLE_LINKER__school_Debug CMakeFiles/school.dir/main.cpp.obj CMakeFiles/school.dir/basic.cpp.obj CMakeFiles/school.dir/exam/WeightedMovingAverage_.cpp.obj CMakeFiles/school.dir/exam/WeightedMovingAverageManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\school.dir
